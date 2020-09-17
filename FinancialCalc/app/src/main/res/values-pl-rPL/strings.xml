@@ -11,8 +11,8 @@
     <string name="other">Inne</string>
     <string name="about">Info</string>
 
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAJNBZnaZtHLLuehpSBehBD7NGWcDyd6do</string>
-    <string name="browser_key">AIzaSyBNpeNbZ0UndHJqRP80PB5L-9glT1-pAAk</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR_API_KEY</string>
+    <string name="browser_key">YOUR_BROWSER_KEY</string>
     <string name="amount">Kwota</string>
     <string name="interest">Oprocentowanie</string>
     <string name="commision">Prowizja</string>
