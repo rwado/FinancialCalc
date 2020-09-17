@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarPop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPop1451"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearer3534">
+
+            <LinearLayout
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="0.65"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3131"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:layout_margin="1dp"
+                    android:padding="1dp"
+                    android:text="@string/total_amount" />
+
+                <TextView
+                    android:id="@+id/textVie3w31131"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:layout_margin="1dp"
+
+                    android:padding="1dp"
+                    android:text="@string/margin" />
+
+
+                <TextView
+                    android:id="@+id/fsfdsfcxvr"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+
+                    android:padding="1dp"
+                    android:text="@string/monthly_installment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1.05"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textLeasingsTotalSumFlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textLeasingsTotalSumPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textLeasingsMarginFlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textLeasingsMarginPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textLeasingsRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="1dp"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1.4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textExtraLeasingsCurrency3"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraLeasingsCurrency111"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="%"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraLeasingsCurrency5"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraLeasingsCurrency444"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:text="%"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraLeasingsCurrency4"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="1dp"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPop11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:paddingRight="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarPop2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="1dp"
+                    android:padding="1dp"
+                    android:text="@string/leasing_amount" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="1dp"
+                    android:padding="1dp"
+                    android:text="@string/interest" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="1dp"
+                    android:padding="1dp"
+                    android:text="@string/period" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_margin="1dp"
+                    android:padding="1dp"
+                    android:text="@string/self_deposit" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/TextBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_margin="1dp"
+                    android:padding="1dp"
+                    android:text="@string/final_buyout" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:padding="1dp"
+                            android:text="100000"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsInterest"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="1dp"
+                            android:text="2.0"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="1dp"
+                            android:text="20"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsSelfDeposit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="1dp"
+                            android:text="20"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsSelfDepositFlat"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="1dp"
+                            android:text="20"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsFinalBuyout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="1dp"
+                            android:text="20"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsFinalBuyoutFlat"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="1dp"
+                            android:text="20"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="2.1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsCurrency"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsInterest1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsPeriodType"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasings1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsCurrency1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeagings2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/textExtraLeasingsCurrency2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/result_height"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/edittext_background"
+                            android:gravity="center"
+                            android:padding="1dp"
+                            android:text="%"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearer3534"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutPop11">
+
+            <TextView
+                android:id="@+id/textView299"
+                style="@style/TextBlue"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:padding="@dimen/result_padding"
+                android:text="@string/results" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

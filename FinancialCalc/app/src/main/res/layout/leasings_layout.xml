@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/amount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLeasingsAmountSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editLeasingsAmount"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="number"
+                    android:text="100000"
+
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/spinnerLeasingsCurrency"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonLeasingsAmountAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarLeasingsAmount"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="1000000"
+                    android:progress="100000"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/leasing_cost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLeasingsInterestSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editLeasingsInterest"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="numberDecimal"
+                    android:text="9.0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/spinnerCurrency1"
+                    style="@style/EditTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="%" />
+
+                <Button
+                    android:id="@+id/buttonLeasingsInterestAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarLeasingsnterest"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="200"
+                    android:progress="90"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button141"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/self_deposit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLeasingsSelfDepositSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editLeasingsSelfDeposit"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="numberDecimal"
+                    android:text="10"
+
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/spinnerCurrency11"
+                    style="@style/EditTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="%" />
+
+                <Button
+                    android:id="@+id/buttonLeasingsSelfDepositAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarLeasingsSelfDeposit"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="450"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button14"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/period" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLeasingsPeriodSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editLeasingsPeriod"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="number"
+                    android:text="36"
+
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/spinnerLeasingsPeriod"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonLeasingsPeriodAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarLeasingsPeriod"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="96"
+                    android:progress="36"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button144"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/final_buyout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLeasingsFinalBuyoutSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editLeasingFinalBuyout"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="number"
+                    android:text="10"
+
+                    android:textColor="#000000" />
+
+
+                <TextView
+                    android:id="@+id/spinnerCurre3ncy11"
+                    style="@style/EditTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="%" />
+
+                <Button
+                    android:id="@+id/buttonLeasingsFinalBuyoutAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarLeasingsFinalBuyout"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="450"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLeasingsCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#99CCFF"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

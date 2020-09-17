@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/amount" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonInvestAmountSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editInvestAmount"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="number"
+                    android:text="100000"
+
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/spinnerInvestCurrency"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonInvestAmountAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarInvestAmount"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="1000000"
+                    android:progress="100000"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/interest" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonInvestInterestSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editInvestInterest"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="numberDecimal"
+                    android:text="2.0"
+
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/spinnerCurrency1"
+                    style="@style/EditTextStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="%" />
+
+                <Button
+                    android:id="@+id/buttonInvestInterestAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarInvestInterest"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="200"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button14"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/period" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonInvestPeriodSub"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/editInvestPeriod"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="100"
+                    android:inputType="number"
+                    android:text="15"
+
+                    android:textColor="#000000" />
+
+                <Spinner
+                    android:id="@+id/spinnerInvestPeriod"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/buttonInvestPeriodAdd"
+                    style="@style/ButtonIncDec"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBarInvestPeriod"
+                    style="@style/SeekBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="600"
+                    android:progress="180"
+                    android:progressDrawable="@drawable/seek_bar"
+                    android:thumb="@drawable/seek_thumb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button1003"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/capitalization" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerInvestCapitalization"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button144"
+                    style="@style/TextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_medium"
+                    android:layout_weight="1"
+                    android:text="@string/year" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupInvest"
+                    style="@style/RadioStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_medium"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/days_360" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/days_365" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonInvestCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#99CCFF"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

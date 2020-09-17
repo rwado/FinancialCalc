@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_loans"
+                android:icon="@drawable/credit"
+                android:title="@string/loans" />
+            <item
+                android:id="@+id/nav_investments"
+                android:icon="@drawable/loan"
+                android:title="@string/investments" />
+            <item
+                android:id="@+id/nav_leasings"
+                android:icon="@drawable/car"
+                android:title="@string/leasings" />
+            <item
+                android:id="@+id/nav_transfers"
+                android:icon="@drawable/trasnfer"
+                android:title="@string/transfers" />
+            <item
+                android:id="@+id/nav_atms"
+                android:icon="@drawable/atm"
+                android:title="@string/nearby_atms" />
+        </menu>
+    </item>
+
+    <item android:title="@string/other">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/about"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>

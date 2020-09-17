@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:fillViewport="true">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarPop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textRates"
+            style="@style/TextBlueBordered"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_medium"
+            android:layout_weight="1"
+            android:text="@string/equal_installment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarPop" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPop113"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textRates">
+
+            <LinearLayout
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textResult1"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/credit_amount" />
+
+                <TextView
+                    android:id="@+id/textResult2"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/interest" />
+
+                <TextView
+                    android:id="@+id/textView3458"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/commision" />
+
+                <TextView
+                    android:id="@+id/textView11534"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/period" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textExtraAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="10000"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="3.0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraCommision"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="1.0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textExtraPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="24"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textExtraCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="PLN"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/editInterest1534"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="%"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/editCommision153"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="%"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textYearMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearer3534"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutPop113">
+
+            <TextView
+                android:id="@+id/textView299"
+                style="@style/TextBlueBordered"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_medium"
+                android:layout_weight="1"
+                android:padding="@dimen/result_padding"
+                android:text="@string/credit_costs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPop1451"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearer3534">
+
+            <LinearLayout
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/sum_of_interest" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/bank_commision" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/total_loan_amount" />
+
+                <TextView
+                    android:id="@+id/textRateFirst"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/credit_intallment" />
+
+                <TextView
+                    android:id="@+id/textRateLast"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:padding="@dimen/result_padding"
+                    android:text="@string/last_installment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textInterestSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCommisionSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textSumAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCreditRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCreditRateLast"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textCurrency2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCurrency3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/result_padding"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCurrency4"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCurrency1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textCurrency5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_height"
+                    android:layout_margin="@dimen/result_margin"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="@dimen/result_padding"
+                    android:text="-"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutPop1451">
+
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/TextBlueBordered"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="@dimen/medium_margin"
+                android:padding="@dimen/medium_padding"
+                android:text="@string/legend" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteY="702dp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_orange" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_blue" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/credit_amount" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/commision" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/TextBlueBordered"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/interest_amount" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
